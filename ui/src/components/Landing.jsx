@@ -2,6 +2,7 @@ import { MotionDiv } from './MotionPrimitives.jsx'
 
 export default function Landing() {
   return (
+    <div className="min-h-screen">
     <section className="py-10 sm:py-14">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <MotionDiv className="space-y-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
@@ -22,8 +23,9 @@ export default function Landing() {
             </div>
           </div>
         </MotionDiv>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   )
 }
 
